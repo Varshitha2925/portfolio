@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
         "Built a secure REST API for user management, appointment scheduling, and payment processing using Stripe.",
       image: "/images/doctor-appointment.png",
       liveDemo: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/Varshitha2925/Doctor-Patient-Appointment",
     },
     {
       title: "Portfolio Website",
@@ -87,7 +87,15 @@ const Projects: React.FC = () => {
         "A fully responsive portfolio website showcasing skills, projects, and experience with smooth animations.",
       image: "/images/portfolio.png",
       liveDemo: "#",
-      codeLink: "#",
+      codeLink: "https://github.com/Varshitha2925/portfolio",
+    },
+    {
+      title: "Event Booking Platform",
+      description:
+        "Built a secure REST API for user management, book event, organize events,send a remainder email for the event using nodemail, processing using Stripe.",
+      image: "/images/doctor-appointment.png",
+      liveDemo: "#",
+      codeLink: "https://github.com/Varshitha2925/Event-Booking-Platform-WEB",
     },
   ];
 
@@ -99,7 +107,7 @@ const Projects: React.FC = () => {
           <Card key={index}>
             <ProjectImage src={project.image} alt={project.title} />
             <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectDescription>{project.description}</ProjectDescription>
+            <ProjectDescription >{project.description}</ProjectDescription>
             <ButtonContainer>
               <Button href={project.liveDemo} target="_blank" rel="noopener noreferrer">
                 Live Demo

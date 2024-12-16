@@ -57,7 +57,7 @@ const Header: React.FC = () => {
         <NavLink>Experience</NavLink>
         <NavLink>Contact</NavLink>
         <NavLink>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+          <a href="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
             Resume
           </a>
         </NavLink>
