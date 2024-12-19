@@ -17,7 +17,6 @@ const Navbar = styled.nav`
 
 const Logo = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.xl};
-  font-family: ${({ theme }) => theme.fonts.heading};
   font-weight: bold;
 `;
 

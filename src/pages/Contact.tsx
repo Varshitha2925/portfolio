@@ -54,7 +54,7 @@ const SocialLinks = styled.div`
 
     &:hover {
       transform: scale(1.1);
-      color: ${({ theme }) => theme.colors.secondary};
+      color: #e76f51;
     }
   }
 `;

@@ -9,7 +9,7 @@ const Section = styled.section`
 
 const Heading = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.xxl};
-  font-family: ${({ theme }) => theme.fonts.heading};
+ 
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing.md};
 `;

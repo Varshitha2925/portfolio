@@ -9,7 +9,6 @@ const Section = styled.section`
 
 const Heading = styled.h2`
   font-size: ${({ theme }) => theme.fontSizes.xxl};
-  font-family: ${({ theme }) => theme.fonts.heading};
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing.md};
 `;
@@ -40,6 +39,8 @@ const ProjectTitle = styled.h3`
 const ProjectDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.sm};
   color: ${({ theme }) => theme.colors.textLight};
+  height: 90px;
+  overflow:scroll;
 `;
 
 const ButtonContainer = styled.div`
@@ -92,7 +93,7 @@ const Projects: React.FC = () => {
     {
       title: "Event Booking Platform",
       description:
-        "Built a secure REST API for user management, book event, organize events,send a remainder email for the event using nodemail, processing using Stripe.",
+        "Built a secure REST API for user management, book event, organize events,send a remainder email for the event using nodemail",
       image: "/images/doctor-appointment.png",
       liveDemo: "#",
       codeLink: "https://github.com/Varshitha2925/Event-Booking-Platform-WEB",
