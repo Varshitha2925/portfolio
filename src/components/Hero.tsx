@@ -8,7 +8,7 @@ const HeroSection = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  width: 100%
+ 
   background: #f8f9fa;
   color: #e76f51;
   padding: 3rem;
