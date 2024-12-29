@@ -7,18 +7,19 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
+
+
 const App: React.FC = () => {
   return (
-    <div >
-        <Header />
+    < >
+        <Header /> 
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
         <Footer />
-        
-    </div>
+    </>
   );
 };
 
