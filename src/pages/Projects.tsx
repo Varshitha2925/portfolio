@@ -33,7 +33,7 @@ const ProjectImage = styled.img`
 const ProjectTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: bold;
-  color: #333333;
+  color: #1f2937;
   height: 30px;
 `;
 
