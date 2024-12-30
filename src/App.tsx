@@ -9,12 +9,11 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
 const Section = styled.section`
-  width: -webkit-fill-available;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
-  border:2px solid red;
   padding:0;
   margin:0;
 `;

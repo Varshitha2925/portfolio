@@ -9,6 +9,7 @@ const ContactSection = styled.section`
   justify-content: center;
   padding: 3rem 1rem;
   background: #f8f9fa;
+  width: 100vw;
   color: #333333;
 `;
 

@@ -7,6 +7,7 @@ const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   width: -webkit-fill-available; /* Ensures it fits the viewport width */
+
   z-index: 1000;
   display: flex;
   justify-content: space-between;

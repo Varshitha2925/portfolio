@@ -5,6 +5,7 @@ import Card from "../components/Card/Card";
 const Section = styled.section`
   padding: 2rem;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  width: 100vw;
 `;
 
 const Heading = styled.h2`

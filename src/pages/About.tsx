@@ -5,7 +5,6 @@ const AboutSection = styled.section`
   padding: 4rem 2rem;
   background: #f8f9fa;
   color: #333333;
-  border: 2px solid blue;
   width: -webkit-fill-available;
 `;
 

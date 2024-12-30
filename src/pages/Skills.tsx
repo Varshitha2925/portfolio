@@ -8,6 +8,7 @@ const SkillsSection = styled.section`
   text-align: center;
   background: #f8f9fa;
   color: #333333;
+  width: 100vw;
   @media (max-width: 768px) {
     padding: 2rem 1rem;
   }
