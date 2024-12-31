@@ -97,9 +97,12 @@ const Header: React.FC = () => {
         >
           Contact
         </Link>
-        <a href="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <Link
+          className="nav-link"
+          to="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing"
+        >
           Resume
-        </a>
+        </Link>
       </nav>
     </HeaderContainer>
   );
