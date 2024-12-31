@@ -10,7 +10,7 @@ const HeroSection = styled.section`
   height: 100vh;
   width: -webkit-fill-available;
   background: #f8f9fa;
-  color: orange;
+  color: #e76f51;
   padding: 3rem;
   position: relative;
   overflow: hidden;
