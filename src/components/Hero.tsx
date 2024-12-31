@@ -15,7 +15,6 @@ const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
   flex-direction: column-reverse;  // Default for mobile-first
-  border:2px solid red;
   @media (min-width: 768px) {
     flex-direction: row;
   }
