@@ -8,14 +8,14 @@ const HeroSection = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: -webkit-fill-available;
   background: #f8f9fa;
-  color: #f39c12;
+  color: orange;
   padding: 3rem;
   position: relative;
   overflow: hidden;
   flex-direction: column-reverse;  // Default for mobile-first
-
+  border:2px solid red;
   @media (min-width: 768px) {
     flex-direction: row;
   }
