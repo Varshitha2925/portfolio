@@ -31,16 +31,20 @@ const HeaderContainer = styled.header`
     cursor: pointer;
 
     &:hover {
-      color: #f39c12;
+      color: #e76f51;
     }
   }
 
   a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer
 
     &:hover {
-      color: #f39c12;
+      color: #e76f51;
     }
   }
 `;
@@ -97,12 +101,9 @@ const Header: React.FC = () => {
         >
           Contact
         </Link>
-        <Link
-          className="nav-link"
-          to="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing"
-        >
-          Resume
-        </Link>
+        <a href="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#fff" }}>
+            Resume
+          </a>
       </nav>
     </HeaderContainer>
   );
