@@ -10,6 +10,7 @@ import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 // import GitHubCommitChart from "./pages/GitHubCommitChart";
 import GitHubStats from "./pages/GitHubStats";
+import GitHubRepoStats from "./pages/GitHubRepoStats";
 
 
 const Section = styled.section`
@@ -41,14 +42,17 @@ const App: React.FC = () => {
         <Section id="projects">
           <Projects />
         </Section>
-       
+        <Section id="contact">
+        <GitHubRepoStats username="Varshitha2925" />
+        </Section>
         <Section id="contact">
         <GitHubStats username="Varshitha2925"/>
         </Section>
-        
         <Section id="contact">
           <Contact />       
         </Section>
+        
+        
 
     </div>
   );
