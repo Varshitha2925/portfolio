@@ -8,6 +8,9 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
+// import GitHubCommitChart from "./pages/GitHubCommitChart";
+import GitHubStats from "./pages/GitHubStats";
+
 
 const Section = styled.section`
   width: 100vw;
@@ -38,8 +41,13 @@ const App: React.FC = () => {
         <Section id="projects">
           <Projects />
         </Section>
+       
         <Section id="contact">
-          <Contact />
+        <GitHubStats username="Varshitha2925"/>
+        </Section>
+        
+        <Section id="contact">
+          <Contact />       
         </Section>
 
     </div>

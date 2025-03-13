@@ -9,3 +9,36 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+
+.github-repo-list {
+    padding: 20px;
+  }
+  
+  .repo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .repo-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repo-card h4 {
+    margin-top: 0;
+  }
+  
+  .repo-card a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+  
+  .repo-card a:hover {
+    text-decoration: underline;
+  }
+  
