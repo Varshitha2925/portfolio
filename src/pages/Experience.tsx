@@ -1,91 +1,79 @@
-import React from "react";
-import styled from "styled-components";
-import Card from "../components/Card/Card";
+import React from 'react';
+import styled from 'styled-components';
 
-const Section = styled.section`
-  padding: ${({ theme }) => theme.spacing.lg};
-  background: ${({ theme }) => theme.colors.background};
-`;
-
-const Heading = styled.h2`
-  font-size: ${({ theme }) => theme.fontSizes.xxl};
- 
-  text-align: center;
-  margin-bottom: ${({ theme }) => theme.spacing.md};
-`;
-
-const ExperienceContainer = styled.div`
+const ExperienceSection = styled.section`
+  padding: 4rem 8rem;
   display: flex;
-  gap: ${({ theme }) => theme.spacing.md};
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    flex-direction: column;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience-card {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 400px;
+    height: 250px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #aaa;
+    }
   }
 `;
 
-const JobTitle = styled.h3`
-  font-size: ${({ theme }) => theme.fontSizes.lg};
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.text};
-`;
-
-const Company = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.md};
-  font-weight: 600;
-  color: ${({ theme }) => theme.colors.textLight};
-`;
-
-const Description = styled.ul`
-  margin: 0;
-  padding: 0 1rem;
-  font-size: ${({ theme }) => theme.fontSizes.sm};
-  color: ${({ theme }) => theme.colors.textLight};
-  list-style: disc;
-`;
-
-const Experience: React.FC = () => {
+const Experience = () => {
   const experiences = [
     {
-      title: "Junior Software Engineer",
-      company: "Innova Solutions",
-      duration: "August 2022 – July 2023",
-      responsibilities: [
-        "Led the development of a client data management application, improving decision-making speed by 30%.",
-        "Designed responsive front-end interfaces using Angular and TypeScript.",
-        "Implemented efficient backend services with Node.js and MongoDB, enhancing data retrieval by 40%.",
-      ],
+      role: 'Junior Software Developer',
+      company: 'Innova Solutions',
+      duration: 'Aug 2022 - July 2023',
+      description: '',
     },
     {
-      title: "STEM Education Intern",
-      company: "Aviate Robotics",
-      duration: "April 2020 – September 2020",
-      responsibilities: [
-        "Created a 6-month STEM curriculum impacting over 100 students.",
-        "Conducted 10+ workshops on programming basics using SCRATCH software.",
-        "Aligned educational modules with STEM standards to ensure consistency.",
-      ],
-    },
+      role: 'Intern',
+      company: 'Aviate Robotics',
+      duration: 'Apr 2020 - Sep 2020',
+      description: '',
+    }
   ];
 
   return (
-    <Section id="experience">
-      <Heading>Experience</Heading>
-      <ExperienceContainer>
-        {experiences.map((experience, index) => (
-          <Card key={index}>
-            <JobTitle>{experience.title}</JobTitle>
-            <Company>{experience.company}</Company>
-            <p>{experience.duration}</p>
-            <Description>
-              {experience.responsibilities.map((responsibility, idx) => (
-                <li key={idx}>{responsibility}</li>
-              ))}
-            </Description>
-          </Card>
+    <ExperienceSection id="experience">
+      <h2>Experience</h2>
+      <div className="experience-cards">
+        {experiences.map((exp, index) => (
+          <div key={index} className="experience-card">
+            <h3>{exp.role}</h3>
+            <p>{exp.company}</p>
+            <p>{exp.duration}</p>
+            {/* <p>{exp.description}</p> */}
+          </div>
         ))}
-      </ExperienceContainer>
-    </Section>
+      </div>
+    </ExperienceSection>
   );
 };
 

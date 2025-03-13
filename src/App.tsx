@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
 
 const Section = styled.section`
   width: 100vw;
@@ -28,6 +29,9 @@ const App: React.FC = () => {
         <Section id="about">
           <About />
         </Section>
+        <Section id="experience">
+          <Experience />
+        </Section>
         <Section id="skills">
           <Skills />
         </Section>
@@ -37,6 +41,7 @@ const App: React.FC = () => {
         <Section id="contact">
           <Contact />
         </Section>
+
     </div>
   );
 };

@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
       title: "AI Image Generator",
       description:
         "A full-stack MERN application replicating MidJourney and DALL-E, with AI-driven text-to-image generation.",
-      image: "/images/ai-generator.png",
+      // image: "/images/ai-generator.png",
       liveDemo: "#",
       codeLink: "#",
     },
@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
       title: "Doctor-Patient Appointment",
       description:
         "Built a secure REST API for user management, appointment scheduling, and payment processing using Stripe.",
-      image: "/images/doctor-appointment.png",
+      // image: "/images/doctor-appointment.png",
       liveDemo: "#",
       codeLink: "https://github.com/Varshitha2925/Doctor-Patient-Appointment",
     },
@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
       title: "Portfolio Website",
       description:
         "A fully responsive portfolio website showcasing skills, projects, and experience with smooth animations.",
-      image: "/images/portfolio.png",
+      // image: "/images/portfolio.png",
       liveDemo: "#",
       codeLink: "https://github.com/Varshitha2925/portfolio",
     },
@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
       title: "Event Booking Platform",
       description:
         "Built a secure REST API for user management, book event, organize events,send a remainder email for the event using nodemail",
-      image: "/images/doctor-appointment.png",
+      // image: "/images/doctor-appointment.png",
       liveDemo: "#",
       codeLink: "https://github.com/Varshitha2925/Event-Booking-Platform-WEB",
     }
@@ -109,13 +109,13 @@ const Projects: React.FC = () => {
       <ProjectsContainer>
         {projects.map((project, index) => (
           <Card key={index}>
-            <ProjectImage src={project.image} alt={project.title} />
+            {/* <ProjectImage src={project.image} alt={project.title} /> */}
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectDescription >{project.description}</ProjectDescription>
             <ButtonContainer>
-              <Button href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+              {/* <Button href={project.liveDemo} target="_blank" rel="noopener noreferrer">
                 Live Demo
-              </Button>
+              </Button> */}
               <Button href={project.codeLink} target="_blank" rel="noopener noreferrer">
                 View Code
               </Button>
