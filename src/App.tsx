@@ -9,7 +9,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 // import GitHubCommitChart from "./pages/GitHubCommitChart";
-import GitHubStats from "./pages/GitHubStats";
+// import GitHubStats from "./pages/GitHubStats";
 import GitHubRepoStats from "./pages/GitHubRepoStats";
 
 
@@ -45,9 +45,9 @@ const App: React.FC = () => {
         <Section id="contact">
         <GitHubRepoStats username="Varshitha2925" />
         </Section>
-        <Section id="contact">
+        {/* <Section id="contact">
         <GitHubStats username="Varshitha2925"/>
-        </Section>
+        </Section> */}
         <Section id="contact">
           <Contact />       
         </Section>

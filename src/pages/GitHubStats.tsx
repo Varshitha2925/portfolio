@@ -53,27 +53,12 @@ const GitHubStats: React.FC<GitHubStatsProps> = ({ username }) => {
       </div>
 
       {/* GitHub Contribution Graph (Green color for commits) */}
-      <div className="github-contribution-graph">
+      {/* <div className="github-contribution-graph">
         <h3>GitHub Contribution Graph</h3>
         <a href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer">
           <img
             src={`https://github-readme-activity-graph.cyclic.app/graph/?username=${username}&bg_color=ffffff&color=36d7b7&line=36d7b7&point=36d7b7&area=true&area_color=4a9999`}
             alt="GitHub Contribution Graph"
-          />
-        </a>
-      </div>
-
-      {/* GitHub Repo Card */}
-      {/* <div className="github-repo-card">
-        <h3>GitHub Repository: {repo}</h3>
-        <a
-          href={`https://github.com/${username}/${repo}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={`https://github-readme-stats.vercel.app/api/pin/?username=${username}&repo=${repo}`}
-            alt={`GitHub Repo Card: ${repo}`}
           />
         </a>
       </div> */}

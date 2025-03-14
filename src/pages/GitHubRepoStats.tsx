@@ -15,6 +15,8 @@ const GitHubRepoStats: React.FC<GitHubRepoStatsProps> = ({ username }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+  const contributionGraphURL = `https://ghchart.rshah.org/${username}`;
+
   // Fetch the list of repos
   useEffect(() => {
     const fetchRepos = async () => {
@@ -49,20 +51,17 @@ const GitHubRepoStats: React.FC<GitHubRepoStatsProps> = ({ username }) => {
 
   return (
     <div className="github-repo-stats-container">
-      {/* GitHub Contribution Graph (Grid-style) */}
-      <div className="github-contribution-graph">
-        <h3>GitHub Contribution Graph</h3>
-        <a href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer">
-          <img
-            src={`https://github-readme-stats.vercel.app/api/wakatime?username=Varshitha2925`}
-            alt="GitHub Contribution Graph"
-          />
-        </a>
-      </div>
-
+    <div className="contribution-graph">
+      <h2>🔥 GitHub Contribution Graph</h2>
+      <img 
+        src={contributionGraphURL}
+        alt={`${username}'s GitHub Contribution Graph`}
+        className="contribution-grid"
+      />
+    </div>
       {/* Display Multiple Repos */}
+      <h3>More Projects</h3>
       <div className="github-repos-list">
-        <h3>GitHub Repositories</h3>
         {repos.map((repo) => (
           <div className="github-repo-card" key={repo.name}>
             <a href={repo.url} target="_blank" rel="noopener noreferrer">
