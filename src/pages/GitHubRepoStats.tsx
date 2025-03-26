@@ -52,7 +52,7 @@ const GitHubRepoStats: React.FC<GitHubRepoStatsProps> = ({ username }) => {
   return (
     <div className="github-repo-stats-container">
     <div className="contribution-graph">
-      <h2>🔥 GitHub Contribution Graph</h2>
+      <h2>🔥 My Coding Footprints</h2>
       <img 
         src={contributionGraphURL}
         alt={`${username}'s GitHub Contribution Graph`}
