@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import profilePic from "../assets/images/profile-photo.png"; // Replace with your actual image path
+import profilePic from "../assets/images/photo.jpeg"; // Replace with your actual image path
 
 const HeroSection = styled.section`
   display: flex;
@@ -55,7 +55,7 @@ const HeroSubtitle = styled.h3`
 `;
 
 const HeroImage = styled(motion.img)`
-  width: 350px;
+  width: 650px;
   height: 500px;
   object-fit: cover;
   border-radius: 15px; /* Rectangular with rounded corners */
