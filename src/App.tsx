@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import './App.css';
 import Header from "./components/Header";
@@ -11,6 +11,8 @@ import Experience from "./pages/Experience";
 // import GitHubCommitChart from "./pages/GitHubCommitChart";
 // import GitHubStats from "./pages/GitHubStats";
 import GitHubRepoStats from "./pages/GitHubRepoStats";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Section = styled.section`
@@ -24,15 +26,21 @@ const Section = styled.section`
 `;
 
 const App: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="body">
       <Header />
-        <Section id="home">
+        <Section id="home" data-aos="fade-up">
           <Home />
         </Section>
-        <Section id="about">
+        {/* <Section id="about">
           <About />
-        </Section>
+        </Section> */}
         <Section id="experience">
           <Experience />
         </Section>

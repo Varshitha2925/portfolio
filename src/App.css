@@ -51,3 +51,38 @@ body {
   padding-left: 100px;
 }
   
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #6c63ff 0%, #574b90 100%);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.highlight {
+  color: #ffd700;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #ffffff;
+  color: #6c63ff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wave-divider {
+  overflow: hidden;
+  line-height: 0;
+}
