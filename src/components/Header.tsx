@@ -12,21 +12,31 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  color: #6c757d;
+  
 
   width: 97vw;
   nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-right: 8rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #6c757d;
+
   }
+  .logo {
+    margin-left: 6rem;
+    color: #6c757d;}
+  
 `;
 
 const NavLink = styled(ScrollLink)`
-  color: #fff;
+  color: #6c757d;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
@@ -37,12 +47,12 @@ const NavLink = styled(ScrollLink)`
 `;
 
 const ResumeLink = styled.a`
-  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
+  color: #6c757d;;
 
   &:hover {
     color: #e76f51;
@@ -58,7 +68,7 @@ const Logo = styled.div`
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <Logo>
+      <Logo className="logo">
         <NavLink
           to="hero"
           smooth={true}

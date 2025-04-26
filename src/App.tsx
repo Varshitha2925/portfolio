@@ -3,7 +3,6 @@ import styled from "styled-components";
 import './App.css';
 import Header from "./components/Header";
 import Home from "./components/Hero";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
