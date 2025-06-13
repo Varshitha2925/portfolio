@@ -13,9 +13,11 @@ const HeaderContainer = styled.header`
   align-items: center;
   padding: 1rem 2rem;
  
-  color: #6c757d;
-  
+  color:rgb(255, 255, 255);
 
+  background-color: rgba(79, 77, 77, 0.95); // Increased opacity here
+  opacity: 1;
+  
   width: 97vw;
   nav {
     display: flex;
@@ -34,7 +36,7 @@ const HeaderContainer = styled.header`
 `;
 
 const NavLink = styled(ScrollLink)`
-  color: #6c757d;
+  color:rgb(253, 254, 255);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -52,7 +54,7 @@ const ResumeLink = styled.a`
   font-weight: bold;
   transition: color 0.3s ease-in-out;
   cursor: pointer;
-  color: #6c757d;;
+  color:rgb(255, 255, 255);;
 
   &:hover {
     color: #e76f51;

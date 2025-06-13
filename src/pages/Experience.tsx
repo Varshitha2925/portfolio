@@ -53,6 +53,12 @@ const Experience = () => {
       description: '',
     },
     {
+      role: 'Software Engineer',
+      company: 'Aviate Robotics',
+      duration: 'May 2021 - July 2022',
+      description: '',
+    },
+    {
       role: 'Intern',
       company: 'Aviate Robotics',
       duration: 'Apr 2020 - Sep 2020',
