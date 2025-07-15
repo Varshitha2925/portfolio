@@ -463,7 +463,7 @@ const GitHubRepoStats: React.FC<GitHubRepoStatsProps> = ({ username }) => {
           viewport={{ once: true }}
         >
           <ReposGrid>
-            {repos.map((repo, index) => (
+            {repos.map((repo) => (
               <RepoCard
                 key={repo.name}
                 variants={itemVariants}
