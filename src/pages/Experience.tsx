@@ -289,14 +289,9 @@ const Experience: React.FC = () => {
       duration: 'Aug 2022 - July 2023'
     },
     {
-      role: 'Software Engineer',
+      role: 'Full Stack Developer',
       company: 'Aviate Robotics',
-      duration: 'May 2021 - July 2022'
-    },
-    {
-      role: 'Software Engineering Intern',
-      company: 'Aviate Robotics',
-      duration: 'Apr 2020 - Sep 2020'
+      duration: 'Jan 2020 - July 2022'
     }
   ];
 
