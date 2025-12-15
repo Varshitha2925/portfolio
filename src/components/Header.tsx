@@ -48,18 +48,18 @@ const NavLink = styled(ScrollLink)`
   }
 `;
 
-const ResumeLink = styled.a`
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
-  color:rgb(255, 255, 255);;
+// const ResumeLink = styled.a`
+//   text-decoration: none;
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   transition: color 0.3s ease-in-out;
+//   cursor: pointer;
+//   color:rgb(255, 255, 255);;
 
-  &:hover {
-    color: #e76f51;
-  }
-`;
+//   &:hover {
+//     color: #e76f51;
+//   }
+// `;
 
 const Logo = styled.div`
   font-size: 1.5rem;
