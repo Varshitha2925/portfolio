@@ -122,13 +122,6 @@ const Header: React.FC = () => {
         >
           Contact
         </NavLink>
-        <ResumeLink
-          href="https://docs.google.com/document/d/1eH05qH0Rb43knkRwQECmIYGV4PdHmGiqNXaDuQRCGuw/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </ResumeLink>
       </nav>
     </HeaderContainer>
   );
